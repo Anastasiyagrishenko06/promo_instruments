@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Аренда инструмента</title>
+  <meta name="description" content="Аренда профессионального инструмента. Перфораторы, болгарки, шуруповерты и многое другое.">
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+  <!-- Десктопная навигация -->
+  <nav class="navbar" id="desktop-nav">
+    <div class="navbar__inner">
+      <div class="navbar__logo">Инструменты</div>
+      <div class="navbar__links">
+        <button class="navbar__link navbar__link--active" data-target="hero">Главная</button>
+        <button class="navbar__link" data-target="stats">Преимущества</button>
+        <button class="navbar__link" data-target="gallery">Галерея</button>
+        <button class="navbar__link" data-target="about">Характеристика</button>
+        <button class="navbar__link" data-target="testimonials">Отзывы</button>
+        <button class="navbar__link" data-target="cta">Контакты</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Нижняя навигация (мобильная) -->
+  <nav class="bottom-nav">
+    <div class="bottom-nav__list">
+      <button class="bottom-nav__btn bottom-nav__btn--active" data-target="hero">
+        <span class="bottom-nav__icon" style="mask-image: url(img/home.svg); -webkit-mask-image: url(img/home.svg);"></span>
+        <span class="bottom-nav__label">Главная</span>
+      </button>
+      <button class="bottom-nav__btn" data-target="stats">
+        <span class="bottom-nav__icon" style="mask-image: url(img/benefits.svg); -webkit-mask-image: url(img/benefits.svg);"></span>
+        <span class="bottom-nav__label">Преимущества</span>
+      </button>
+      <button class="bottom-nav__btn" data-target="gallery">
+        <span class="bottom-nav__icon" style="mask-image: url(img/galery.svg); -webkit-mask-image: url(img/galery.svg);"></span>
+        <span class="bottom-nav__label">Галерея</span>
+      </button>
+      <button class="bottom-nav__btn" data-target="about">
+        <span class="bottom-nav__icon" style="mask-image: url(img/about.svg); -webkit-mask-image: url(img/about.svg);"></span>
+        <span class="bottom-nav__label">Характеристика</span>
+      </button>
+      <button class="bottom-nav__btn" data-target="testimonials">
+        <span class="bottom-nav__icon" style="mask-image: url(img/feedback.svg); -webkit-mask-image: url(img/feedback.svg);"></span>
+        <span class="bottom-nav__label">Отзывы</span>
+      </button>
+      <button class="bottom-nav__btn" data-target="cta">
+        <span class="bottom-nav__icon" style="mask-image: url(img/contacts.svg); -webkit-mask-image: url(img/contacts.svg);"></span>
+        <span class="bottom-nav__label">Контакты</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="hero__grid">
+      <div class="hero__content">
+        <span class="hero__badge">Аренда инструмента</span>
+        <h1 class="hero__title">Мощность в&nbsp;каждом ударе</h1>
+        <p class="hero__subtitle">Инструменты, на&nbsp;которые можно положиться прямо сейчас. Профессиональное оборудование для любых задач — от&nbsp;ремонта до&nbsp;стройки.</p>
+        <div class="hero__actions">
+          <button class="btn btn--primary">Смотреть каталог</button>
+          <button class="btn btn--outline">Связаться с нами</button>
+        </div>
+      </div>
+      <div class="hero__visual">
+        <div class="hero__image-wrapper">
+          <img src="img/hero_bg.png" alt="Аренда инструмента">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Статистика -->
+  <section class="stats" id="stats">
+    <div class="stats__grid">
+      <div class="stats__item">
+        <div class="stats__number" data-count="12 000+">0</div>
+        <div class="stats__label">активных пользователей</div>
+      </div>
+      <div class="stats__item">
+        <div class="stats__number" data-count="98%">0%</div>
+        <div class="stats__label">довольных клиентов</div>
+      </div>
+      <div class="stats__item">
+        <div class="stats__number" data-count="340+">0</div>
+        <div class="stats__label">завершённых проектов</div>
+      </div>
+      <div class="stats__item">
+        <div class="stats__number" data-count="5 лет">0</div>
+        <div class="stats__label">на рынке</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Галерея -->
+  <section class="gallery" id="gallery">
+    <div class="gallery__header">
+      <div class="gallery__tag">Галерея</div>
+      <h2 class="gallery__title">Инструменты, которые работают на ваш результат</h2>
+    </div>
+    <div class="gallery__grid">
+      <div class="gallery__card">
+        <div class="gallery__image">
+          <img src="img/hummer.jpg" alt="Молоток кожевенный">
+        </div>
+        <p class="gallery__label">Молоток кожевенный</p>
+      </div>
+      <div class="gallery__card">
+        <div class="gallery__image">
+          <img src="img/79825-800x800.jpg" alt="Молоток-кирка">
+        </div>
+        <p class="gallery__label">Молоток-кирка</p>
+      </div>
+      <div class="gallery__card">
+        <div class="gallery__image">
+          <img src="img/molot_lezha.png" alt="Молоток гвоздодер">
+        </div>
+        <p class="gallery__label">Молоток гвоздодер</p>
+      </div>
+      <div class="gallery__card">
+        <div class="gallery__image">
+          <img src="img/images.jpg" alt="Молоток столярный">
+        </div>
+        <p class="gallery__label">Молоток столярный</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Характеристика -->
+  <section class="about" id="about">
+    <div class="about__grid">
+      <div class="about__visual">
+        <div class="about__image-wrapper">
+          <img src="img/195494115.png" alt="Инструмент">
+        </div>
+      </div>
+      <div class="about__content">
+        <h2 class="about__title">Техника, которой можно доверять</h2>
+        <p class="about__text">В нашем каталоге только проверенное оборудование от ведущих производителей. Каждый инструмент проходит техническое обслуживание перед выдачей. Мы гарантируем исправность и&nbsp;готовность к&nbsp;работе 24/7.</p>
+        <ul class="about__list">
+          <li class="about__list-item">Широкий ассортимент — от&nbsp;дрелей до&nbsp;отбойных молотков</li>
+          <li class="about__list-item">Гибкие условия аренды — почасовая, посуточная, на&nbsp;неделю</li>
+          <li class="about__list-item">Доставка по&nbsp;городу и&nbsp;самовывоз в&nbsp;день заказа</li>
+          <li class="about__list-item">Замена инструмента в&nbsp;течение двух часов при неисправности</li>
+        </ul>
+        <div style="margin-top: var(--space-md);">
+          <button class="btn btn--primary">Перейти в каталог</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Отзывы -->
+  <section class="testimonials" id="testimonials">
+    <div class="testimonials__header">
+      <div class="testimonials__tag">Отзывы</div>
+      <h2 class="testimonials__title">Что говорят наши клиенты</h2>
+    </div>
+    <div class="testimonials__grid">
+      <div class="testimonials__card">
+        <p class="testimonials__quote">«Брал перфоратор на&nbsp;выходные — всё работает отлично. Инструмент чистый, острый, видно что следят за&nbsp;состоянием. Обязательно обращусь ещё.»</p>
+        <div class="testimonials__author">
+          <div class="testimonials__avatar">ИП</div>
+          <div>
+            <div class="testimonials__name">Иван Петров</div>
+            <div class="testimonials__role">Частный мастер, Санкт-Петербург</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonials__card">
+        <p class="testimonials__quote">«Пользуемся услугами этой компании уже полгода. Удобно, что можно заказать сразу несколько позиций и&nbsp;привезут в&nbsp;одну точку. Ни разу не&nbsp;подвели.»</p>
+        <div class="testimonials__author">
+          <div class="testimonials__avatar">ОС</div>
+          <div>
+            <div class="testimonials__name">ООО «СтройГрупп»</div>
+            <div class="testimonials__role">Строительная компания</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonials__card">
+        <p class="testimonials__quote">«Отличный сервис. Заказал болгарку через сайт, через час уже работал. Цены адекватные, залог вернули быстро. Буду рекомендовать коллегам.»</p>
+        <div class="testimonials__author">
+          <div class="testimonials__avatar">МК</div>
+          <div>
+            <div class="testimonials__name">Михаил Кузнецов</div>
+            <div class="testimonials__role">Прораб</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonials__card">
+        <p class="testimonials__quote">«Очень выручили, когда сломался свой инструмент. Дали подмену на&nbsp;время ремонта без лишних вопросов. Вежливый персонал, всё чётко и&nbsp;по&nbsp;делу.»</p>
+        <div class="testimonials__author">
+          <div class="testimonials__avatar">АН</div>
+          <div>
+            <div class="testimonials__name">Андрей Николаев</div>
+            <div class="testimonials__role">Ремонтная бригада</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Призыв к действию -->
+  <section class="cta" id="cta">
+    <div class="cta__inner">
+      <h2 class="cta__title">Готовы начать?</h2>
+      <p class="cta__text">Оставьте заявку — и&nbsp;мы свяжемся с&nbsp;вами в&nbsp;течение одного рабочего дня, чтобы обсудить ваш проект.</p>
+      <button class="btn btn--accent">Оставить заявку</button>
+    </div>
+  </section>
+
+  <!-- Подвал -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div>
+        <div class="footer__heading">Инструменты</div>
+        <div class="footer__links">
+          <button class="footer__link">Гаечные ключи</button>
+          <button class="footer__link">Шуруповерты</button>
+          <button class="footer__link">Перфораторы</button>
+          <button class="footer__link">Болгарки</button>
+        </div>
+      </div>
+      <div>
+        <div class="footer__heading">Информация</div>
+        <div class="footer__links">
+          <button class="footer__link">О нас</button>
+          <button class="footer__link">Отзывы</button>
+          <button class="footer__link">Блог</button>
+          <button class="footer__link">FAQ</button>
+        </div>
+      </div>
+      <div>
+        <div class="footer__heading">Компания</div>
+        <div class="footer__links">
+          <span class="footer__link footer__link--plain">Свяжитесь с нами:</span>
+          <span class="footer__link footer__link--plain">+7 (812) 382-61-07</span>
+          <span class="footer__link footer__link--plain">instrumenti@mail.com</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>&copy; 2026 Инструменты. Все права защищены.</p>
+    </div>
+  </footer>
+
+  <script src="scripts/script.js"></script>
+</body>
+</html>
