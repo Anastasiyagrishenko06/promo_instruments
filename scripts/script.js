@@ -150,4 +150,25 @@
     });
   }
 
+  /* Кастомные кнопки с data-scroll-to */
+  var scrollButtons = document.querySelectorAll('[data-scroll-to]');
+  scrollButtons.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var target = btn.getAttribute('data-scroll-to');
+      if (target === 'top') {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else if (target === 'footer') {
+        var footer = document.querySelector('.footer');
+        if (footer) {
+          footer.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      } else {
+        var el = document.getElementById(target);
+        if (el) {
+          el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }
+    });
+  });
+
 })();
